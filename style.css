@@ -1,0 +1,30 @@
+*{
+    background-color: black;
+    color: antiquewhite;
+    text-shadow: orange;
+    margin: 0;
+    padding: 0;
+}
+.mi-clase {
+
+    background-color: yellow;
+}
+#mi-id {
+
+    font-size: 24px;
+}
+.error-message {
+
+    display: none; /* Oculta el mensaje de error */
+}
+button {
+
+    background-color: grey; /* Color inicial del botón */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    background-color: blue; /* Color del botón cuando el ratón pasa por encima */
+}
