@@ -67,4 +67,23 @@ button {
 button:hover {
     background-color: darkgreen; 
 }
-/* cambio herencia*/
+.flex-container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    margin-top: 20px;
+    background-color: lightgray;
+    padding: 20px;
+}
+.flex-item {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    width: 30%; /* Ancho de cada item */
+    text-align: center;
+    border-radius: 5px;
+}
+
+.flex-item:hover {
+    background-color: darkgreen;
+}
