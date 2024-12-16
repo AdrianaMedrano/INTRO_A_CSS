@@ -3,22 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>INTRODUCCION CSS</title>
+    <title>Ejemplo de Herencia en CSS</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>¡Hola, mundo!</h1>
+    <h1>Este es un encabezado h1 con fondo morado</h1>
+    <section>
+        <div id="izquierda">
+            <h2>Encabezado H2 dentro de la sección izquierda</h2>
+            <p>Este es un párrafo dentro de la sección izquierda. Hereda el color y la fuente del body.</p>
+        </div>
 
-    <p>Esta es mi primera página web con CSS.</p>
-    <p class="mi-clase">Este párrafo tiene un fondo amarillo.</p>
-    <h1 id="mi-id">¡Soy único y tengo un tamaño de fuente diferente!</h1>
-    <a href="#">Este es un enlace en línea</a>
-
-<span> y este es un texto dentro de un span.</span>
-<div>Este es un elemento de bloque y ocupa toda la línea.</div>
-
-<p>Este es otro elemento de bloque que también comienza en una nueva línea.</p>
-<button>¡Pasa el ratón por aquí!</button>
-
+        <div id="derecha">
+            <img src="https://via.placeholder.com/600x400" alt="Imagen ejemplo">
+        </div>
+    </section>
+    <div>
+        <p>Este es un párrafo dentro de un div genérico. Hereda la fuente y el color del body.</p>
+    </div>
+    <div class="clase2">
+        <p>Este texto es azul y usa Arial como fuente. Hereda propiedades como el borde.</p>
+        <a href="#">Este es un enlace dentro de .clase2</a>
+    </div>
+    <button>Haz clic aquí</button>
 </body>
 </html>

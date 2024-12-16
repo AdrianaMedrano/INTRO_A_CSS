@@ -1,30 +1,70 @@
-*{
-    background-color: black;
-    color: antiquewhite;
-    text-shadow: orange;
-    margin: 0;
+h1 {
+    background-color: rebeccapurple;
+    margin: 10px;
+    padding: 10px;
+    border: solid rgb(38, 255, 0);
+}
+section {
+    background-color: blueviolet;
+    width: 100%;
+    height: 100%;
+}
+div img {
+    width: 100%;
+    height: 100%;
+    position: inherit; /* Hereda la posición del contenedor */
+}
+div {
+    display: inline-block;
+    color: white; /* Color de texto heredado por los hijos */
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri; /* Fuente heredada por los hijos */
+    width: 600px;
     padding: 0;
+    margin: 0;
+    overflow: hidden;
 }
-.mi-clase {
-
-    background-color: yellow;
+#izquierda {
+    padding: 0 20px 160px 20px;
 }
-#mi-id {
-
-    font-size: 24px;
+#derecha {
+    padding: 8px 0px 8px 88px;
 }
-.error-message {
-
-    display: none; /* Oculta el mensaje de error */
+.clase2 p {
+    color: blue; 
+    font-family: Arial; 
+    border: inherit; 
+    font-size: 18px; 
 }
+/* Herencia de color y fuente de los contenedores */
+.clase2 {
+    font-size: 16px; 
+    color: green;
+    border: solid 2px #ccc; 
+    padding: 10px;
+}
+.clase2 a {
+    color: yellow; 
+    text-decoration: none;
+}
+.clase2 a:hover {
+    color: red; /
+}
+/* Ejemplo de herencia en los botones */
 button {
-
-    background-color: grey; /* Color inicial del botón */
-    color: white;
-    padding: 10px 20px;
-    border: none;
+    font-family: inherit;
+    background-color: #4CAF50; 
+    color: white; 
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
     cursor: pointer;
+    border-radius: 8px; 
 }
 button:hover {
-    background-color: blue; /* Color del botón cuando el ratón pasa por encima */
+    background-color: darkgreen; 
 }
+/* cambio herencia*/
