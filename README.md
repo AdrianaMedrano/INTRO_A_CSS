@@ -2,3 +2,4 @@ Este es un ejercicio de introducción a CSS, que de forma muy básica, identific
 #Ya agregue mi primer commit
 #segundo commit flexbox
 #TERCER COMMIT
+#commit de media queries
