@@ -3,43 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejemplo de Herencia en CSS con Flexbox y Position</title>
+    <title>Starbucks - Página de Inicio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Este es un encabezado h1 con fondo morado</h1>
-    <section>
-        <div id="izquierda">
-            <h2>Encabezado H2 dentro de la sección izquierda</h2>
-            <p>Este es un párrafo dentro de la sección izquierda. Hereda el color y la fuente del body.</p>
-        </div>
-
-        <div id="derecha">
-            <img src="https://img.optimalcdn.com/www.posta.com.mx/2024/03/cbd1c72adc1d99ba9bab0877e9d21fd20f39a85d/2024-03_Frapp-bday.webp" alt="Imagen ejemplo">
+    <nav class="navbar">
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Menú</a></li>
+            <li><a href="#">Pedidos</a></li>
+            <li><a href="#">Localizador</a></li>
+            <li><a href="#">Iniciar sesión</a></li>
+        </ul>
+    </nav>
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Disfruta del mejor café, ¡en Starbucks!</h1>
+            <p>Explora nuestra variedad de bebidas, comidas y más.</p>
+            <a href="#" class="btn">Ver Menú</a>
         </div>
     </section>
-
-    <div class="flex-container">
-        <div class="flex-item">Item 1</div>
-        <div class="flex-item">Item 2</div>
-        <div class="flex-item">Item 3</div>
-    </div>
-
-    <div>
-        <p>Este es un párrafo dentro de un div genérico. Hereda la fuente y el color del body.</p>
-    </div>
-
-    <div class="clase2">
-        <p>Este texto es azul y usa Arial como fuente. Hereda propiedades como el borde.</p>
-        <a href="#">Este es un enlace dentro de .clase2</a>
-    </div>
-
-    <button>Haz clic aquí</button>
-
-    <!-- Ejemplo de Position -->
+    <section class="productos">
+        <div class="producto-item">
+            <img src="https://www.starbucksathome.com/mx/sites/default/files/2021-03/Vanilla-Latte-4.jpg" alt="Vanilla Latte">
+            <h3>Vanilla Latte</h3>
+            <p>Un toque de vainilla que hará tu día aún mejor.</p>
+        </div>
+        <div class="producto-item">
+            <img src="https://djftrby1k8irl.cloudfront.net/s3fs-public/2022-02%2Fcaramel-macchiato_1.png?auto=format&fit=crop&crop=focalpoint&fp-x=0.5&fp-y=0.5&q=80&w=1200&h=627" alt="Caramel Macchiato">
+            <h3>Caramel Macchiato</h3>
+            <p>El equilibrio perfecto entre espresso, leche y caramelo.</p>
+        </div>
+        <div class="producto-item">
+            <img src="https://www.starbucks.es/sites/starbucks-es/files/styles/c10_2_col_text_560x467/public/2021-11/Strawberry%20Acai%20Starbucks%20Refresha%C2%AE%20Drink.jpeg.webp?itok=AzBB7PEI" alt="Strawberry Refresher">
+            <h3>Strawberry Refresher</h3>
+            <p>Refrescante y delicioso, el sabor perfecto para cualquier momento.</p>
+        </div>
+    </section>
     <div class="fixed-box">Caja con position: fixed</div>
     <div class="sticky-box">Caja con position: sticky</div>
     <div class="absolute-box">Caja con position: absolute</div>
-
+    <footer>
+        <p>© 2024 Starbucks Coffee Company. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>

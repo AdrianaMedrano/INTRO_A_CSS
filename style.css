@@ -1,89 +1,80 @@
-h1 {
-    background-color: rebeccapurple;
-    margin: 10px;
-    padding: 10px;
-    border: solid rgb(38, 255, 0);
-}
-section {
-    background-color: blueviolet;
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 100%;
+    background-color: #1E3932;
+    z-index: 1000;
+    padding: 20px 0;
 }
-div img {
-    width: 100%;
-    height: 100%;
-}
-div {
-    display: inline-block;
-    color: white; /* Color de texto heredado por los hijos */
-    text-align: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri; /* Fuente heredada por los hijos */
-    width: 600px;
-    padding: 0;
+.navbar ul {
+    list-style-type: none;
     margin: 0;
-    overflow: hidden;
-}
-#izquierda {
-    padding: 0 20px 160px 20px;
-}
-#derecha {
-    padding: 8px 0px 8px 88px;
-}
-.clase2 p {
-    color: blue; 
-    font-family: Arial; 
-    border: inherit; 
-    font-size: 18px; 
-}
-/* Herencia de color y fuente de los contenedores */
-.clase2 {
-    font-size: 16px; 
-    color: green;
-    border: solid 2px #ccc; 
-    padding: 10px;
-}
-.clase2 a {
-    color: yellow; 
-    text-decoration: none;
-}
-.clase2 a:hover {
-    color: red; 
-}
-/* Ejemplo de herencia en los botones */
-button {
-    font-family: inherit;
-    background-color: #4CAF50; 
-    color: white; 
-    padding: 15px 32px;
+    padding: 0;
     text-align: center;
-    text-decoration: none;
+}
+.navbar ul li {
     display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 8px; 
+    margin-right: 20px;
 }
-button:hover {
-    background-color: darkgreen; 
-}
-.flex-container {
-    display: flex;
-    justify-content: space-between; 
-    align-items: center;
-    margin-top: 20px;
-    background-color: lightgray;
-    padding: 20px;
-}
-.flex-item {
-    background-color: #4CAF50;
+.navbar ul li a {
     color: white;
-    padding: 20px;
-    width: 30%; 
-    text-align: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    font-size: 18px;
+}
+.navbar ul li a:hover {
+    background-color: #006d52;
     border-radius: 5px;
 }
-.flex-item:hover {
-    background-color: darkgreen;
+.hero {
+    background: url('https://www.starbucks.com/bm~/media/starbucks/stores/intl/global/global_hero_background.ashx') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 120px 20px;
+}
+.hero-text h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+.hero-text p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+.btn {
+    background-color: #006d52;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.btn:hover {
+    background-color: #004f38;
+}
+.productos {
+    display: flex;
+    justify-content: space-around;
+    margin: 40px 20px;
+}
+.producto-item {
+    text-align: center;
+    width: 30%;
+}
+.producto-item img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+.producto-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.producto-item p {
+    font-size: 1.1rem;
+    color: #666;
 }
 .fixed-box {
     position: fixed;
@@ -94,6 +85,7 @@ button:hover {
     padding: 20px;
     width: 200px;
     text-align: center;
+    z-index: 999;
 }
 .sticky-box {
     position: sticky;
@@ -103,11 +95,11 @@ button:hover {
     padding: 20px;
     width: 100%;
     text-align: center;
-    z-index: 10; /* Asegura que esté por encima de otros elementos */
+    z-index: 10;
 }
 .absolute-box {
     position: absolute;
-    top: 300px;  /* Se posiciona a 300px desde la parte superior de su contenedor */
+    top: 300px;
     left: 50%;
     transform: translateX(-50%);
     background-color: purple;
@@ -115,4 +107,29 @@ button:hover {
     padding: 20px;
     width: 200px;
     text-align: center;
+}
+footer {
+    background-color: #1E3932;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+@media (max-width: 768px) {
+    .navbar ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+    .navbar ul li a {
+        padding: 15px 20px;
+        display: block;
+        text-align: center;
+    }
+    .productos {
+        flex-direction: column;
+        align-items: center;
+    }
+    .producto-item {
+        width: 80%;
+        margin-bottom: 20px;
+    }
 }
